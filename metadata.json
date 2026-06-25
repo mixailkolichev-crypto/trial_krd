@@ -1,0 +1,6 @@
+{
+  "name": "Автосервис ТРИАЛ",
+  "description": "Премиальный автосервис и шиномонтаж ТРИАЛ в Краснодаре. Быстрее. Точнее. Надежнее. Обслуживание в стиле Формулы-1.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

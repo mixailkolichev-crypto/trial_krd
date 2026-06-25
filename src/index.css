@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;0,900;1,800&family=Russo+One&family=JetBrains+Mono:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Russo One", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: #09090b;
+  color: #f4f4f5;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Carbon Fiber Texture Utility */
+.bg-carbon {
+  background-color: #111113;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(239, 68, 68, 0.04) 0%, transparent 80%),
+    linear-gradient(27deg, #18181b 5px, transparent 5px),
+    linear-gradient(207deg, #18181b 5px, transparent 5px),
+    linear-gradient(27deg, #222226 5px, transparent 5px),
+    linear-gradient(207deg, #222226 5px, transparent 5px);
+  background-size: 100% 100%, 10px 10px, 10px 10px, 10px 10px, 10px 10px;
+  background-position: 0 0, 0 0, 5px 5px, 0px 5px, 5px 0px;
+}
+
+.bg-checkered {
+  background-image: linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%), 
+                    linear-gradient(-45deg, rgba(255,255,255,0.03) 25%, transparent 25%), 
+                    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.03) 75%), 
+                    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.03) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.text-gradient-racing {
+  background: linear-gradient(135deg, #ffffff 0%, #d4d4d8 60%, #ef4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clip-racing {
+  clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+}
+
